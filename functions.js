@@ -1,8 +1,7 @@
 function getMultiplyTable() {
-  
-  const body = document.body;
+  const { body } = document;
   const table = document.createElement('table');
-  let tr, td, tdInner = '';
+  let tr; let td; let tdInner = '';
 
   table.style.width = '100%';
   table.setAttribute('border', '1');
@@ -22,7 +21,6 @@ function getMultiplyTable() {
     // tdInner set to empty string
     tdInner = '';
     tr.append(td);
-    
     if (i === 5 || i === 10) {
       table.append(tr);
     }
