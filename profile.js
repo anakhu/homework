@@ -13,7 +13,7 @@ function getUserData() {
         isValidName,
         'string',
         user,
-        1
+        1,
       );
     }
 
@@ -24,7 +24,7 @@ function getUserData() {
         isValidName,
         'string',
         user,
-        2
+        2,
       );
     }
 
@@ -35,7 +35,7 @@ function getUserData() {
         isValidName,
         'string',
         user,
-        3
+        3,
       );
     }
 
@@ -46,7 +46,7 @@ function getUserData() {
         isValidAge,
         'number',
         user,
-        4
+        4,
       );
     }
 
@@ -104,7 +104,7 @@ function isValidName(promptValue) {
 function isValidAge(promptValue) {
   const age = parseInt(promptValue, 10);
 
-  return isNaN(age) || age <= 0 || age > 120 ? false : true;
+  return (isNaN(age) || age <= 0 || age > 120) ? false : true;
 }
 
 
@@ -130,11 +130,9 @@ function displayUserInfo() {
       Ваш возраст в днях: ${age * 365}
       Через 5 лет Вам будет: ${age + 5}
       Ваш пол: ${sex}
-      Вы на пенсии: ${isRetired(sex, age)}`
+      Вы на пенсии: ${isRetired(sex, age)}`,
     );
   } catch (error) {
     console.log('Ошибка получения данных от пользователя');
   }
 }
-
-displayUserInfo();

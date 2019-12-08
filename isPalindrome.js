@@ -57,14 +57,3 @@ function isPalindrome4(str) {
 
   return false;
 }
-
-// test
-function makeTest(fn) {
-  const string = prompt('Type your string here to check if it\'s a palindrome...');
-
-  return !fn(string)
-    ? alert(`${string} is not a palindrome `)
-    : alert(`${string} is a palindrome`);
-}
-
-makeTest(isPalindrome1);
