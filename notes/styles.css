@@ -1,0 +1,145 @@
+:root {
+  --main-bg-color: #AEADF0;
+  --body-bg-color: #D8DCFF;
+  --main-font-color: #272735;
+  --supl-color: #C38D94;
+  --btn-bg-color: #A76571;
+}
+
+html {
+  background-color: var(--main-bg-color);
+}
+body {
+  max-width: 50%;
+  margin: 5% auto;
+  padding: 5px 10px 25px 10px;
+  background-color: var(--body-bg-color);
+  color: var(--main-font-color);
+  box-shadow: 5px 10px var(--main-font-color);
+}
+h3 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+button {
+  background-color: var(--btn-bg-color);
+  font-weight: bold;
+  color: var(--body-bg-color);
+  cursor: pointer;
+}
+.main-title {
+  text-align: center;
+  background-color: var(--main-font-color);
+  margin-top: 0px;
+  padding: 20px 0px;
+  color: var(--body-bg-color);
+  font-style: italic;
+}
+.notes-number {
+  text-align: end;
+  font-weight: bold;
+}
+.search {
+  margin: 3px auto;
+  border: 1px solid var(--main-bg-color);
+}
+.search-label {
+  font-weight: bold;
+  margin-left: 8px;
+}
+.show-form {
+  display: block;
+  background-color: var(--btn-bg-color);
+}
+
+/* note style */
+.note-container {
+  border: 1px solid var(--note-bg-color);
+  max-width: 100%;
+  background-color: var(--main-font-color);
+}
+.note {
+  margin: 5px;
+  padding: 5px;
+  border-left: 5px dashed var(--btn-bg-color);
+}
+.note-title {
+  cursor: pointer;
+  background-color: var(--main-bg-color);
+  padding: 5px;
+  font-style: italic;
+}
+.note-body {
+  display: none;
+  position: relative;
+  min-height: 60px;
+  overflow-wrap: break-word;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: var(--body-bg-color);
+  color: var(--main-font-color);
+}
+.btn-delete {
+  display: block;
+  background-color: var(--btn-bg-color);
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+}
+
+/* form style */
+.add-note-container {
+  display: none;
+  background-color: var(--main-bg-color);
+  border: 2px solid var(--note-bg-color);
+  padding: 10px 15px;
+  margin: 10px 0px;
+  font-weight: bold;
+}
+
+.add-note-form {
+  position: relative;
+}
+
+label {
+  display: block;
+}
+
+input {
+  display: block;
+  width: 95%;
+  margin: 2px 0px;
+  margin-bottom: 5px;
+}
+
+.btn-hide {
+  border-radius: 30px;
+  background-color: var(--btn-bg-color);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 2px 2px grey;
+  top: -5px;
+  right: -5px;
+  cursor: pointer;
+}
+
+.btn-add {
+  margin-top: 5px;
+}
+
+.show-form {
+  display: block;
+  margin-left: 5px;
+}
+
+.warning {
+  font-size: 0.9rem;
+  color: var(--btn-bg-color);
+}

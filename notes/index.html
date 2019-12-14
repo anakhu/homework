@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <title>Notes</title>
+</head>
+<body>
+  <h1 class="main-title">My Notes</h1>
+  <p class="notes-number">Notes: </p>
+  <button class="show-form">Add note</button>
+  <label class="search-label" for="search">Search Notes:</label>
+  <input class="search" name="search">
+  <div class="add-note-container">
+      <form class="add-note-form">
+        <div id="note-title">
+          <label for="title">Title</label>
+          <input id="title" type="text" name="title" required>
+          <p class="warning"></p>
+        </div>
+        <div id="note-body">
+          <label for="details">Details</label>
+          <input id="body" type="text" name="details" required>
+          <p class="warning"></p>
+        </div>
+        <button class="btn-add" type="submit">Add</button>
+        <span class="btn-hide">x</span>
+      </form>
+  </div>
+  <div class="note-container">
+  </div>
+  <script src="notes.js"></script>
+</body>
+</html>
