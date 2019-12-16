@@ -1,0 +1,30 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "apples.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "jasmine": "^3.5.0",
+    "webpack": "^4.41.3",
+    "webpack-cli": "^3.3.10"
+  },
+  "scripts": {
+    "test": "jasmine",
+    "lint": "./node_modules/.bin/eslint",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anakhu/homework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anakhu/homework/issues"
+  },
+  "homepage": "https://github.com/anakhu/homework#readme"
+}

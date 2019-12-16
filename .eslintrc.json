@@ -14,7 +14,7 @@
     "parserOptions": {
         "ecmaVersion": 2018
     },
-    "ignorePatterns": ["node_modules/", "spec/"],
+    "ignorePatterns": ["node_modules/", "spec/", "dist/"],
     "rules": {
        "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
        "quotes": ["error", "single"],

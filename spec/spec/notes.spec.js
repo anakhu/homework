@@ -21,7 +21,7 @@ describe('notes.js', function() {
       });
 
       it('should call setItem method on local storage', function() {
-        updateLocalStorge();
+        updateLocalStorage();
         expect(Storage.prototype.setItem).toHaveBeenCalled();
       });
     });
