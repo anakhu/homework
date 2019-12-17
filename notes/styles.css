@@ -74,7 +74,6 @@ button {
   font-style: italic;
 }
 .note-body {
-  display: none;
   position: relative;
   min-height: 60px;
   overflow-wrap: break-word;
@@ -142,4 +141,10 @@ input {
 .warning {
   font-size: 0.9rem;
   color: var(--btn-bg-color);
+}
+.message {
+  font-size: 1.2rem;
+  color: var(--btn-bg-color);
+  text-align: center;
+  font-weight: bold;
 }
