@@ -14,7 +14,7 @@
     "parserOptions": {
         "ecmaVersion": 2018
     },
-    "ignorePatterns": ["node_modules/", "spec/"],
+    "ignorePatterns": ["node_modules/", "spec/", "dist/"],
     "rules": {
        "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
        "quotes": ["error", "single"],
@@ -22,6 +22,8 @@
        "newline-before-return": "error",
        "indent": ["error", 2],
        "no-unused-vars": "off",
-       "no-console": "off"
+       "no-console": "off",
+       "no-use-before-define": "off",
+       "no-shadow": "off"
     }
 }

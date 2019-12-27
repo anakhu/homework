@@ -4,7 +4,4 @@
 # IDEs
 .idea/*
 .vscode
-*.swp
 
-spec/spec/hometask-3/
-spec/spec/hometask-4/

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Homework-4</title>
+</head>
+<body>
+  <h4 id="seconds-left"></h4>
+  <h1 class="result"></h1>
+  <script src="secondsToTomorrow.js"></script>
+  <script type="text/javascript">
+      const result = document.getElementById('seconds-left');
+      result.innerHTML = `${calcSecondsToTomorrow()} seconds to tomorrow`;
+  </script>
+  <script src="birthday/getDaysToNextBirthday.js"></script>
+  <script src="birthday/birthday.js"></script>
+</body>
+</html>
