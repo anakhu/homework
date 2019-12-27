@@ -5,5 +5,3 @@
 .idea/*
 .vscode
 *.swp
-
-package-lock.json
