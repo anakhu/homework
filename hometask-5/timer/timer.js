@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 function Timer(limit, onTick) {
   this.maxTime = (limit > 60 || limit <= 0) ? 60 : limit;
   this.currentTime = this.maxTime;
@@ -39,18 +40,3 @@ Timer.prototype.toggle = function toggle() {
     this.isPaused = !this.isPaused;
   }
 };
-
-
-const timerElement = document.getElementById('timer');
-const timerBtn = document.getElementById('pause');
-
-function renderTimer(secondsLeft) {
-  timerElement.textContent = secondsLeft;
-}
-
-const timer = new Timer(75, renderTimer);
-timer.run();
-
-timerBtn.addEventListener('click', () => {
-  timer.toggle();
-});
