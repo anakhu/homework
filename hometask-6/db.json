@@ -1,0 +1,22 @@
+{
+  "employees": [
+    {
+      "firstName": "Ann",
+      "lastName": "Smith",
+      "email": "ann@mail.ru",
+      "id": 1
+    },
+    {
+      "firstName": "Mark",
+      "lastName": "Brown",
+      "email": "brown@mail.ru",
+      "id": 3
+    },
+    {
+      "firstName": "Leo",
+      "lastName": "Black",
+      "email": "black@mail.ru",
+      "id": 4
+    }
+  ]
+}
