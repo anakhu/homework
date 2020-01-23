@@ -1,3 +1,4 @@
+/* eslint-disable no-case-declarations */
 /* eslint-disable no-param-reassign */
 
 function UI(restApiInstance) {
@@ -45,18 +46,23 @@ UI.prototype.addEntry = function addEntry(data) {
 };
 
 
-UI.prototype.updateEntry = function updateEntry(id, data, nameElement, surnameElement, emailElement) {
-  const callback = this.api.update(id, data);
-  callback(({ status }) => {
-    if (status === 200) {
-      nameElement.textContent = data.firstName;
-      surnameElement.textContent = data.lastName;
-      emailElement.textContent = data.email;
-      this.message.textContent = 'The entry was updated!';
-    } else {
-      this.message.textContent = 'Couldn\'t update the entry!';
-    }
-  });
+UI.prototype.updateEntry = function updateEntry(id, data) {
+  if (this.isValidInput(data)) {
+    const callback = this.api.update(id, data);
+    callback(({ status }) => {
+      if (status === 200) {
+        const fieldsToUpdate = document.getElementById(id).children;
+        fieldsToUpdate[0].textContent = data.firstName;
+        fieldsToUpdate[1].textContent = data.lastName;
+        fieldsToUpdate[2].textContent = data.email;
+        this.message.textContent = 'The entry was updated!';
+      } else {
+        this.message.textContent = 'Couldn\'t update the entry!';
+      }
+    });
+  } else {
+    this.message.textContent = 'Fields mustn\'t be empty!';
+  }
 };
 
 
@@ -77,45 +83,24 @@ UI.prototype.renderEntry = function renderEntry(obj) {
   const entry = document.createElement('div');
   entry.setAttribute('id', obj.id);
 
-  const name = document.createElement('a');
-  name.setAttribute('href', '#');
-  name.textContent = obj.firstName;
+  divPattern(entry, obj);
 
-  const surname = document.createElement('p');
-  surname.textContent = obj.lastName;
-
-  const email = document.createElement('p');
-  email.textContent = obj.email;
-
-  name.addEventListener('click', () => {
-    this.getEntry(obj.id);
-  });
-
-  const deleteButton = document.createElement('button');
-  deleteButton.textContent = 'Delete';
-
-  deleteButton.addEventListener('click', () => {
-    this.deleteEntry(obj.id);
-  });
-
-  const updateButton = document.createElement('button');
-  updateButton.textContent = 'Update';
-
-  updateButton.addEventListener('click', () => {
-    const data = this.getFormData();
-
-    if (this.isValidInput(data)) {
-      this.updateEntry(obj.id, data, name, surname, email);
-    } else {
-      this.message.textContent = 'Fields mustn\'t be empty!';
+  entry.addEventListener('click', (e) => {
+    switch (e.target.id) {
+    case 'btn-delete':
+      this.deleteEntry(obj.id);
+      break;
+    case 'btn-update':
+      const data = this.getFormData();
+      this.updateEntry(obj.id, data);
+      break;
+    case 'fname':
+      this.getEntry(obj.id);
+      break;
+    default:
+      console.log('click =)');
     }
   });
-
-  entry.appendChild(name);
-  entry.appendChild(surname);
-  entry.appendChild(email);
-  entry.appendChild(deleteButton);
-  entry.appendChild(updateButton);
 
   this.container.appendChild(entry);
 };
@@ -131,11 +116,13 @@ UI.prototype.getFormData = function getFormData() {
   const lastName = document.getElementById('last-name').value;
   const email = document.getElementById('email').value;
 
-  const data = {
-    firstName,
-    lastName,
-    email,
-  };
-
-  return data;
+  return { firstName, lastName, email };
 };
+
+function divPattern(elem, obj) {
+  elem.insertAdjacentHTML('beforeend', `<a href='#' id='fname'>${obj.firstName}</a>`);
+  elem.insertAdjacentHTML('beforeend', `<p id='fname'>${obj.lastName}</p>`);
+  elem.insertAdjacentHTML('beforeend', `<p id='email'>${obj.email}</p>`);
+  elem.insertAdjacentHTML('beforeend', '<button id=\'btn-delete\'>Delete</button>');
+  elem.insertAdjacentHTML('beforeend', '<button id=\'btn-update\'>Update</button>');
+}

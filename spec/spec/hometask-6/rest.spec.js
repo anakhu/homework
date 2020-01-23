@@ -226,6 +226,5 @@ describe('rest.js', function() {
       expect(requestStatus).toEqual(success.status);
       done();
     });
-  });
-  
+  }); 
 });

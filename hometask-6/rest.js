@@ -1,3 +1,5 @@
+/* eslint-disable guard-for-in */
+/* eslint-disable no-restricted-syntax */
 /* eslint-disable no-param-reassign */
 
 function setApi(baseUrl, path, makeRequestFn, RestApiConstructor) {
@@ -7,7 +9,7 @@ function setApi(baseUrl, path, makeRequestFn, RestApiConstructor) {
   return new RestApiConstructor(url, makeRequest);
 }
 
-function makeRequest(method, url, data = null, callback = () => {}) {
+function makeRequest(method, url, data = null, headers = {}, callback = () => {}) {
   const xhr = new XMLHttpRequest();
   xhr.open(method, url);
 
@@ -15,8 +17,11 @@ function makeRequest(method, url, data = null, callback = () => {}) {
 
   xhr.onload = ({ target }) => callback({ response: target.response, status: target.status });
 
+  for (const i in headers) {
+    xhr.setRequestHeader(i, headers[i]);
+  }
+
   if (data) {
-    xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.send(JSON.stringify(data));
   } else {
     xhr.send();
@@ -25,9 +30,43 @@ function makeRequest(method, url, data = null, callback = () => {}) {
 
 
 function RestAPI(url, makeRequest) {
-  this.get = () => (callback) => makeRequest('GET', url, null, callback);
-  this.getById = (id) => (callback) => makeRequest('GET', `${url}/${id}`, null, callback);
-  this.post = (data) => (callback) => makeRequest('POST', url, data, callback);
-  this.delete = (id) => (callback) => makeRequest('DELETE', `${url}/${id}`, null, callback);
-  this.update = (id, data) => (callback) => makeRequest('PUT', `${url}/${id}`, data, callback);
+  this.get = () => (callback) => makeRequest(
+    'GET',
+    url,
+    null,
+    { 'Content-Type': 'application/json' },
+    callback,
+  );
+
+  this.getById = (id) => (callback) => makeRequest(
+    'GET',
+    `${url}/${id}`,
+    null,
+    { 'Content-Type': 'application/json' },
+    callback,
+  );
+
+  this.post = (data) => (callback) => makeRequest(
+    'POST',
+    url,
+    data,
+    { 'Content-Type': 'application/json' },
+    callback,
+  );
+
+  this.delete = (id) => (callback) => makeRequest(
+    'DELETE',
+    `${url}/${id}`,
+    null,
+    { 'Content-Type': 'application/json' },
+    callback,
+  );
+
+  this.update = (id, data) => (callback) => makeRequest(
+    'PUT',
+    `${url}/${id}`,
+    data,
+    { 'Content-Type': 'application/json' },
+    callback,
+  );
 }
