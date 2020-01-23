@@ -1,0 +1,37 @@
+{
+  "employees": [
+    {
+      "firstName": "Jhon",
+      "lastName": "Brown",
+      "email": "brown@mail.ru",
+      "id": 1
+    },
+    {
+      "firstName": "Mark",
+      "lastName": "Brown",
+      "email": "brown@mail.ru",
+      "id": 3
+    },
+    {
+      "firstName": "Leo",
+      "lastName": "Matsers",
+      "email": "lora@mail.ru",
+      "id": 4
+    },
+    {
+      "firstName": "Mike",
+      "lastName": "Brown",
+      "email": "mike@mail.ru",
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "firstName": "Leo",
+      "lastName": "Brown",
+      "email": "brown@mail.ru",
+      "id": 7
+    }
+  ]
+}

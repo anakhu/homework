@@ -4,6 +4,9 @@
   "description": "",
   "main": "apples.js",
   "dependencies": {
+    "http-server": "^0.12.1",
+    "json-server": "^0.15.1",
+    "lodash": "^4.17.15",
     "moment": "^2.24.0"
   },
   "devDependencies": {
@@ -11,13 +14,16 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
     "jasmine": "^3.5.0",
+    "jasmine-ajax": "^4.0.0",
     "webpack": "^4.41.3",
     "webpack-cli": "^3.3.10"
   },
   "scripts": {
     "test": "jasmine",
     "lint": "./node_modules/.bin/eslint",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "start": "./node_modules/.bin/http-server ./hometask-6 -a localhost -p 8000 -c-1",
+    "start-json": "./node_modules/.bin/json-server --watch ./hometask-6/db.json --port 3000"
   },
   "repository": {
     "type": "git",
