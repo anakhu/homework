@@ -2,9 +2,9 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './notes/src/index.js',
+  entry: './hometask-7/weather/main.js',
   output: {
-    path: path.resolve(__dirname, 'notes/dist'),
+    path: path.resolve(__dirname, 'hometask-7/weather/dist'),
     filename: 'bundle.js',
   },
 };

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" style="background: lightsteelblue">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hometask-7</title>
+</head>
+<body style="max-width: 1000px; margin: 10% auto;">  
+
+  <div id="weather-input-field" class="text-center">
+     <h3 class="bg-info text-white">Get weather for tomorrow</h3>
+      <form id="geoposition-form">
+        <label for="latitude">Latitude</label>
+        <input id="latitude" type="text" required />
+        <label for="longitude">Longitude</label>
+        <input id="longitude" type="text" required />
+        <button class="btn btn-dark" id="submit">Get weather</button>
+      </form>
+  </div>
+
+  <hr class="bg-info">
+
+  <div id="response-display">
+    <h4 id="message" class="text-center"></h4>
+    <div id="spinner" class="spinner-border text-primary" role="status" style="display: none; margin: 0 auto">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  
+  <hr class="bg-info">
+
+  <div id="weather-output-field" style="display: none">
+
+    <div id="carouselControls" class="carousel slide text-center bg-light" data-ride="carousel">
+      <div id="weather-output" class="carousel-inner">
+      </div>
+      <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div id="range-input" class="text-center">
+      <input class="text-center bg-dark" type="range" id="hour" name="hour" style="width: 100%"
+        min="0" max="23">
+      <label for="hour"><strong>Hour</strong></label>
+    </div>
+
+</div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+  <script src="dist/bundle.js"></script>
+</body>
+</html>
