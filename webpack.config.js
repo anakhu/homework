@@ -1,16 +1,21 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 
 module.exports = {
   mode: 'development',
-  entry: ['webpack/hot/dev-server', './hometask-7/weather/main.js'],
+  entry: ['webpack/hot/dev-server', './hometask-8/src/app.js'],
   output: {
-    path: path.resolve(__dirname, 'hometask-7/weather/dist'),
+    path: path.resolve(__dirname, 'hometask-8/dist'),
     filename: 'bundle.js',
   },
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: './hometask-7/weather',
+    contentBase: './hometask-8/dist',
     hot: true,
+    historyApiFallback: {
+      index: 'index.html',
+    },
   },
   module: {
     rules: [
@@ -23,6 +28,13 @@ module.exports = {
             presets: ['@babel/preset-env'],
           },
         },
-      }],
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader', 'css-loader',
+        ],
+      },
+    ],
   },
 };

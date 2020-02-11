@@ -1,0 +1,64 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "title": "Soybean products may help you live longer",
+      "date": "5th February, 2019",
+      "keywords": [],
+      "snippet": "There are many reasons why Japanese people live longer than the rest of us. One reason might be soybean products...",
+      "content": "There are many reasons why Japanese people live longer than the rest of us. One reason might be soybean products like tofu, natto and miso. Scientists from the National Institute of Health and Nutrition in Tokyo conducted a study into the health benefits of soybeans and their products. They found that people who regularly ate tofu, natto and miso were 10 per cent less likely to die from common killers than people who ate no soybean products. Researchers said eating soybean-based food lowered the risk of death from heart attacks, stroke and other cardiovascular problems. They said: 'A higher intake of fermented soy products was associated with a lower risk of mortality. Soybeans and fermented soybean products are superfoods. They are rich in protein, fibre and unsaturated fats. They are also a source of potassium and other minerals. Soy fibre can help to lower cholesterol and boost weight loss. \n Soy is an important part of the cuisine of East Asia, especially in Japan. People in Asia have eaten soy since ancient times. The most common types of soy products are tofu (soybean curd), natto (fermented soybeans), miso (a fermented soybean paste added to soups) and soy sauce. Some scientists say miso is high in salt. The researchers said salt in miso does not put people at risk of high blood pressure. Soybean products are becoming more popular around the world.'",
+      "comments": {},
+      "image": "assets/img/news1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Astronauts bake first ever cookies in space",
+      "date": "3th February, 2019",
+      "keywords": [],
+      "snippet": "Kitchen technology has reached new heights. Astronauts on the International Space Station have made ...",
+      "content": "Kitchen technology has reached new heights. Astronauts on the International Space Station have made the universe's first ever space-baked cookies. The ISS residents said the chocolate chip cookies looked out of this world. The cookies mark a first in space cookery. They are the very first kind of food to be baked in space from raw ingredients. Astronauts' food is usually pre-made on Earth. The food is dehydrated or pre-packaged and is heated or warmed up on the space station. The astronauts said eating freshly baked food will make them happy while on the space station. It will be a comforting reminder of home. This will be important for astronauts going to the moon or on the long journey to Mars. Baking the space cookies was not as straightforward as the astronauts thought it would be. On Earth, cookies take about 20 minutes to bake in an oven heated to 150 degrees Celsius (302 degrees Fahrenheit). That was not long enough in space. The first cookie came out totally undercooked. It was more raw dough than cookie. The space bakers turned up the oven's temperature and baked the dough for longer until they were successful. The fifth cookie they made took 130 minutes to bake. And the big question is - how do they taste? No one knows yet. The space-baked cookies are now in a laboratory in Houston, Texas. Scientists will test them to see if they are safe to eat.",
+      "comments": {},
+      "image": "assets/img/news2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Stress really does turn your hair grey",
+      "date": "3th March, 2019",
+      "keywords": [],
+      "snippet": "Scientists have discovered that stress is one factor in turning our hair grey, white or silver...",
+      "content": "Scientists have discovered that stress is one factor in turning our hair grey, white or silver - at least, in mice. Stem cell biologists from Harvard University in the USA conducted a series of tests on mice to ascertain the effects of stress on the rodents. The scientists injected the mice with an ingredient found in chili peppers that gives them their heat. The compound made the mice stressed. This caused a hair-colouring pigment in the mice to go into overdrive as a reaction to the stress and deplete colour-regenerating stem cells. This caused the mice's hair to rapidly turn white. Lead researcher, Professor Ya-Chieh Hsu, said: 'The detrimental impact of stress that we discovered was beyond what I imagined.' People have wondered for centuries about the link between stress and greying hair. It is believed that France's Queen Marie Antoinette's hair turned white the night before she was beheaded during the French Revolution in the late-eighteenth century. More recently, we have witnessed the locks of presidents and other world leaders quickly lose colour. The strains of leadership seem to go to the roots of things, especially hair follicles. Professor Hsu said the loss of the pigment-regenerating stem cells cannot be reversed. She said: 'Once they're gone, you can't regenerate pigment any more. The damage is permanent. Worryingly, she hypothesised that stress could be responsible for accelerating the aging process.",
+      "comments": {},
+      "image": "assets/img/news3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Oxford comma missing from Brexit coin",
+      "date": "01-02-2020",
+      "keywords": [],
+      "snippet": "The United Kingdom officially left the European Union on January the 31st, three-and-a-half years after the British people...",
+      "content": "The United Kingdom officially left the European Union on January the 31st, three-and-a-half years after the British people voted to leave. The U.K. government issued a special coin to mark the occasion. However, the coin is at the centre of an argument about punctuation. The new 50-pence coin became available yesterday. It has the words: 'Peace, prosperity and friendship with all nations' on its reverse side. A famous British writer, Sir Philip Pullman, is unhappy with the punctuation. He believes the phrase is incorrectly punctuated. Mr Pullman said there should be a comma after the word 'prosperity'. Such a comma is called an Oxford comma. He said the coin, 'should be boycotted by all literate people'. The Oxford comma gets its name from the Oxford University Press, which makes common use of the punctuation mark. In the USA, it is called the serial comma. It is used before the final 'and' or 'or' in a written list of three or more items. Many people say there is no need for an Oxford comma in the phrase on the 50-pence coin because the meaning is very clear. Word expert Susie Dent said the Oxford comma is useful if it makes it easier to understand the writer's meaning. A U.K. citizen said the comma issue wasn't important. She tweeted: 'It doesn't matter if there is a comma or not on the 50p coin. The most important thing is that there is peace, and prosperity, and friendship with all nations.'",
+      "comments": {},
+      "image": "assets/img/news4.jpeg"
+    },
+    {
+      "id": 5,
+      "title": "Chimpanzees love dancing, say researchers",
+      "date": "02-02-2020",
+      "keywords": [],
+      "snippet": "Who knew that chimpanzees love to dance? They also like to clap along to music, and...",
+      "content": "Who knew that chimpanzees love to dance? They also like to clap along to music, and nod their head, tap their feet and move in time with the rhythm. A new study shows that chimpanzees could appreciate music. The researchers are from Kyoto University in Japan. They say their study could help us understand how early humans developed an interest in music. Researchers Dr Yuko Hattori and professor Masaki Tomonaga conducted tests on seven chimps. They played the apes six two-minute songs on a piano for six days. The researchers said the chimps had a definite sense of rhythm and it changed their mood. The male chimpanzees seemed to respond to the melodies more than the females. The researchers wrote that chimpanzees could have passed on a liking for music and dance to early humans millions of years ago. This could have happened via a common ancestor around six million years ago. The researchers said the study suggested that our love of dancing was deep inside the earliest humans. Dr Hattori said: 'Chimpanzees dance to some extent in the same way as humans.' She added: 'In humans, listening to music causes rhythmic movement, suggesting a close connection between the auditory and motor areas in the brain. She believes the research could shed light on the evolution of dancing in humans and why we love melody and rhythm so much.",
+      "comments": {},
+      "image": "assets/img/news5.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Online shopping addiction is a mental illness",
+      "date": "03-02-2020",
+      "keywords": [],
+      "snippet": "The advent of the Internet has brought with it the convenience of shopping at our leisure in ...",
+      "content": "The advent of the Internet has brought with it the convenience of shopping at our leisure in the comfort of our own home. However, for many, the allure of shopping for bargains and treats can turn into an addiction. Experts believe there is a danger that online shopping can develop into a mental illness. Researchers from the Hannover Medical School in Germany have termed it 'Buying Shopping Disorder' (BSD). The researchers say this condition should be recognized by the medical profession as an illness and should not simply be classed as one of various 'impulse control' disorders. Psychotherapist Dr Astrid Müller said: 'It really is time to...accumulate further knowledge about BSD on the Internet.' Dr Müller and her colleagues conducted research on data from earlier studies on compulsive shopping. Their research focused on 122 patients who sought treatment for BSD. Dr Müller reported that about five per cent of the population may be suffering from BSD. She added that younger people are more prone to developing it and experienced greater levels of anxiety and depression. People with BSD readily exhibit negative behaviors. These include spending excessive amounts of money on things they don't need, hoarding and never using things they order, buying things for the sake of instant gratification, and ending up in debt. BSD can destroy marriages, relationships and mental health.",
+      "comments": {},
+      "image": "assets/img/news6.jpg"
+    }
+  ]
+}
