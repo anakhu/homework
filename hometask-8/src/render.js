@@ -52,10 +52,11 @@ class Render {
 
   displayFilteredContent() {
     const currentSearchValue = window.location.pathname.split('/search/value=')[1];
+    const sanitezedSearchValue = decodeURI(currentSearchValue);
     const allNews = document.querySelectorAll('.news-card');
     allNews.forEach((news) => {
       const titleValue = news.querySelector('span').innerHTML;
-      if (!titleValue.toLowerCase().includes(currentSearchValue.toLowerCase())) {
+      if (!titleValue.toLowerCase().includes(sanitezedSearchValue.toLowerCase())) {
         news.style.opacity = CONFIG.styles.dim;
       } else {
         news.style.opacity = CONFIG.styles.brighten;

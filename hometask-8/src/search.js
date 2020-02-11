@@ -31,7 +31,7 @@ class Search {
   getSearchInitialState() {
     if (window.location.pathname.includes('/search/')) {
       this.currentState = `/${window.location.pathname.split('/')[1].trim()}`;
-      this.searchField.value = window.location.pathname.split('/search/value=')[1].trim();
+      this.searchField.value = decodeURI(window.location.pathname.split('/search/value=')[1].trim());
     }
   }
 }
