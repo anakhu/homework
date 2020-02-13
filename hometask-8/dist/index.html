@@ -1,0 +1,102 @@
+<!Doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Arimo|PT+Sans+Narrow&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+  <base href="/">
+  <link rel="stylesheet" href="./main.css" type="text/css">
+  <title>The news</title>
+</head>
+<body style="overflow:auto;">
+
+  <nav>
+    <div class="nav-wrapper brown">
+      <h1 class="brand-logo center lime-text darken-2"><strong>Breaking News</strong></h1>
+        <ul>
+          <li class="about nav-link">About</li>
+          <li class="contact nav-link">Contact</li>
+        </ul>
+    </div>
+  </nav>
+
+  
+  <main class="app-container" >
+
+    <div class="search-form" style="display: none;">
+      <label for="search">Find news by title</label>
+      <input type="text" id="search">
+    </div>
+
+    <div class="all-news">
+        <script id="news-template" type="x-handlebars-template">​
+            {{#each this}}
+              <div data-index="{{id}}" class="news-card">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="{{ image }}">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title orange-text lighten-1">{{title}}</span>
+                    <p>{{ snippet }}</p>
+                    <p><strong>{{ date }}</strong></p>
+                  </div>
+                  <div class="card-action">
+                    <h5 class="blue-text lighten-1"><strong>Read</strong></h5>
+                    </div>
+                  </div>
+              </div>
+            {{/each}}
+          </script>
+    </div>
+
+    <div class="single-news">
+        <script id="single-news-template" type="x-handlebars-template">
+            {{#with news}}
+            <div id="modal{{id}}" class="modal modal-fixed-footer" data-index={{id}}>
+              <div class="modal-content">
+                <h4 class="brown-text">{{title}}</h4>
+                <h5>{{date}}</h5>
+                <img src="{{ image }}">
+                <p>{{content}}</p>
+              </div>
+              <div class="modal-footer">
+                <h5 id="modal-close" class="modal-close waves-effect waves-green btn-flat">Close</h5>
+              </div>
+            </div>
+          {{/with}}
+      </script>
+    </div>
+
+    <div class="about" style="display: none;">
+        <h3 class="orange-text ligten-2"><strong>About Page</strong></h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deserunt asperiores inventore laudantium excepturi, quisquam quam autem iusto exercitationem quis nostrum laborum harum quidem, reprehenderit aspernatur nobis ut similique rem.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates fugiat atque soluta nobis eligendi obcaecati placeat id. Ipsa nam ratione totam voluptas iste laboriosam itaque esse adipisci aut unde.</p>
+    </div>
+
+    <div class="contact" style="display: none;">
+        <h3 class="orange-text ligten-2"><strong>Contact page</strong></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deserunt asperiores inventore laudantium excepturi, quisquam quam autem iusto exercitationem quis nostrum laborum harum quidem, reprehenderit aspernatur nobis ut similique rem.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates fugiat atque soluta nobis eligendi obcaecati placeat id. Ipsa nam ratione totam voluptas iste laboriosam itaque esse adipisci aut unde.</p>
+    </div>
+
+    <div class="error" style="display: none;">
+        <h3 class="orange-text lighten-2">Something went wrong!</h3>
+        <img src="assets/img/error.png">
+        <p>Seems like the page you are looking for doesn't exist!</p>
+        <h4 id="error-link" class="blue-text lighten-1"><strong>Back to main page!</strong></h4>
+    </div>
+
+  </main>
+
+<script src='bundle.js'></script>
+
+</body>
+</html>
+
